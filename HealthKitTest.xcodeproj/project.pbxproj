@@ -7,19 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		992CA31726A6B4ED00F76ED4 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992CA31626A6B4ED00F76ED4 /* HealthKitSetupAssistant.swift */; };
+		992CA31A26A6B96700F76ED4 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992CA31926A6B96700F76ED4 /* TestView.swift */; };
+		992CA31D26A6BC6800F76ED4 /* ProfileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992CA31C26A6BC6800F76ED4 /* ProfileDataStore.swift */; };
+		992CA31F26A6C42A00F76ED4 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992CA31E26A6C42A00F76ED4 /* ProfileModel.swift */; };
 		99D1B66426A567C0006E77EB /* HealthKitTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1B66326A567C0006E77EB /* HealthKitTestApp.swift */; };
 		99D1B66626A567C0006E77EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1B66526A567C0006E77EB /* ContentView.swift */; };
 		99D1B66826A567C1006E77EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99D1B66726A567C1006E77EB /* Assets.xcassets */; };
 		99D1B66B26A567C1006E77EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99D1B66A26A567C1006E77EB /* Preview Assets.xcassets */; };
+		99D1B67526A567E4006E77EB /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D1B67426A567E4006E77EB /* HealthKit.framework */; };
+		99D1B67726A56843006E77EB /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1B67626A56843006E77EB /* HealthStore.swift */; };
+		99D1B67A26A57A04006E77EB /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1B67926A57A04006E77EB /* Step.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		992CA31626A6B4ED00F76ED4 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
+		992CA31926A6B96700F76ED4 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		992CA31C26A6BC6800F76ED4 /* ProfileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataStore.swift; sourceTree = "<group>"; };
+		992CA31E26A6C42A00F76ED4 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		99D1B66026A567C0006E77EB /* HealthKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D1B66326A567C0006E77EB /* HealthKitTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitTestApp.swift; sourceTree = "<group>"; };
 		99D1B66526A567C0006E77EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		99D1B66726A567C1006E77EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99D1B66A26A567C1006E77EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		99D1B66C26A567C1006E77EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99D1B67226A567E4006E77EB /* HealthKitTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthKitTest.entitlements; sourceTree = "<group>"; };
+		99D1B67426A567E4006E77EB /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		99D1B67626A56843006E77EB /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		99D1B67926A57A04006E77EB /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +42,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99D1B67526A567E4006E77EB /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		992CA31826A6B95500F76ED4 /* TestViews */ = {
+			isa = PBXGroup;
+			children = (
+				992CA31926A6B96700F76ED4 /* TestView.swift */,
+			);
+			path = TestViews;
+			sourceTree = "<group>";
+		};
+		992CA31B26A6BC4A00F76ED4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				992CA31626A6B4ED00F76ED4 /* HealthKitSetupAssistant.swift */,
+				992CA31C26A6BC6800F76ED4 /* ProfileDataStore.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		99D1B65726A567C0006E77EB = {
 			isa = PBXGroup;
 			children = (
 				99D1B66226A567C0006E77EB /* HealthKitTest */,
 				99D1B66126A567C0006E77EB /* Products */,
+				99D1B67326A567E4006E77EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,11 +86,16 @@
 		99D1B66226A567C0006E77EB /* HealthKitTest */ = {
 			isa = PBXGroup;
 			children = (
+				992CA31B26A6BC4A00F76ED4 /* Helper */,
+				992CA31826A6B95500F76ED4 /* TestViews */,
+				99D1B67826A579EE006E77EB /* Models */,
+				99D1B67226A567E4006E77EB /* HealthKitTest.entitlements */,
 				99D1B66326A567C0006E77EB /* HealthKitTestApp.swift */,
 				99D1B66526A567C0006E77EB /* ContentView.swift */,
 				99D1B66726A567C1006E77EB /* Assets.xcassets */,
 				99D1B66C26A567C1006E77EB /* Info.plist */,
 				99D1B66926A567C1006E77EB /* Preview Content */,
+				99D1B67626A56843006E77EB /* HealthStore.swift */,
 			);
 			path = HealthKitTest;
 			sourceTree = "<group>";
@@ -67,6 +106,23 @@
 				99D1B66A26A567C1006E77EB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		99D1B67326A567E4006E77EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99D1B67426A567E4006E77EB /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99D1B67826A579EE006E77EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				99D1B67926A57A04006E77EB /* Step.swift */,
+				992CA31E26A6C42A00F76ED4 /* ProfileModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992CA31A26A6B96700F76ED4 /* TestView.swift in Sources */,
 				99D1B66626A567C0006E77EB /* ContentView.swift in Sources */,
+				99D1B67A26A57A04006E77EB /* Step.swift in Sources */,
+				99D1B67726A56843006E77EB /* HealthStore.swift in Sources */,
 				99D1B66426A567C0006E77EB /* HealthKitTestApp.swift in Sources */,
+				992CA31D26A6BC6800F76ED4 /* ProfileDataStore.swift in Sources */,
+				992CA31726A6B4ED00F76ED4 /* HealthKitSetupAssistant.swift in Sources */,
+				992CA31F26A6C42A00F76ED4 /* ProfileModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthKitTest/HealthKitTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HealthKitTest/Preview Content\"";
 				DEVELOPMENT_TEAM = 252A989XMN;
@@ -289,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthKitTest/HealthKitTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HealthKitTest/Preview Content\"";
 				DEVELOPMENT_TEAM = 252A989XMN;
